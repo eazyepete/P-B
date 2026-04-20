@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First App</title>
+  <title>Our First App</title>
+
+  <!-- ✅ Mobile optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -12,21 +16,32 @@
     }
 
     .container {
-      margin-top: 100px;
+      margin-top: 60px;
+      padding: 20px;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 2.2em;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 1em;
       opacity: 0.9;
     }
 
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 350px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
     .btn {
-      margin-top: 20px;
+      margin-top: 15px;
       padding: 12px 25px;
       font-size: 16px;
       color: white;
@@ -41,33 +56,24 @@
       background: #ff9a3c;
       transform: scale(1.05);
     }
-
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      margin: 40px auto;
-      width: 300px;
-      border-radius: 15px;
-      backdrop-filter: blur(10px);
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <h1>🚀 Our First App</h1>
-    <p>Built by Pete and Brandon the bestest. Getting better every day.</p>
+    <p>Built by us. Now mobile-ready.</p>
 
     <div class="card">
       <h2>Welcome</h2>
-      <p>This is our starting point.</p>
-      <button class="btn" onclick="sayHello()">Click Me</button>
+      <p>This actually works on your phone now.</p>
+      <button class="btn" onclick="sayHello()">Tap Me</button>
     </div>
   </div>
 
   <script>
     function sayHello() {
-      alert("Let’s gooo 🚀");
+      alert("You just tapped your app on your phone 🚀");
     }
   </script>
 </body>
